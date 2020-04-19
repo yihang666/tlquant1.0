@@ -39,51 +39,51 @@ pro = ts.pro_api()
 
 def getDataAndSavePic():
     northMoney = TLAPI.NorthMoney()
-    northmoney_file_path = r'F:\temp\northmoney.png'  # 北向资金图片地址
+    northmoney_file_path = r'./temp/northmoney.png'  # 北向资金图片地址
     plt.xticks(rotation=45)
     plt.savefig(northmoney_file_path)
 
     southMoney = TLAPI.SouthMoney()
-    southMoney_file_path = r'F:\temp\southmoney.png'  # 南向资金绘图
+    southMoney_file_path = r'./temp/southmoney.png'  # 南向资金绘图
     plt.savefig(southMoney_file_path)
 
     shibor = TLAPI.Shibor()
-    shibor_file_path = r'F:\temp\shibor.png'
+    shibor_file_path = r'./temp/shibor.png'
     plt.xticks(rotation=45)
     plt.savefig(shibor_file_path)
 
     current = TLAPI.Current()
-    current_file_path = r'F:\temp\currency.png'
+    current_file_path = r'./temp/currency.png'
     plt.xticks(rotation=45)
     plt.savefig(current_file_path)
 
     wenzhouindex = TLAPI.WenzhouIndex()
-    wenzhouindex_file_path = r'F:\temp\wenzhouindex.png'
+    wenzhouindex_file_path = r'./temp/wenzhouindex.png'
     plt.savefig(wenzhouindex_file_path)
 
     industryVolumeRank = TLAPI.IndustryVolumeRank()
-    industryVolumeRank_file_path = r'F:\temp\industryVolumeRank.png'
+    industryVolumeRank_file_path = r'./temp/industryVolumeRank.png'
     plt.xticks(rotation=45)
     plt.savefig(industryVolumeRank_file_path, dpi=200, bbox_inches='tight')
 
     industryVolumeWeekRank = TLAPI.IndustryVolumeWeekRank()
-    industryVolumeWeekRank_file_path = r'F:\temp\industryVolumeWeekRank.png'
+    industryVolumeWeekRank_file_path = r'./temp/industryVolumeWeekRank.png'
     plt.xticks(rotation=45)
     plt.savefig(industryVolumeWeekRank_file_path, dpi=200, bbox_inches='tight')
 
     industryVolumeWeekRankL2 = TLAPI.IndustryVolumeWeekRankSW_L2()
-    industryVolumeWeekRankL2_file_path = r'F:\temp\industryVolumeWeekRankL2.png'
+    industryVolumeWeekRankL2_file_path = r'./temp/industryVolumeWeekRankL2.png'
     plt.xticks(rotation=45)
     plt.savefig(industryVolumeWeekRankL2_file_path, dpi=200, bbox_inches='tight')
 
 
     margin = TLAPI.Margin()
-    margin_file_path = r"F:\temp\margin.png"
+    margin_file_path = r"./temp/margin.png"
     plt.xticks(rotation=45)
     plt.savefig(margin_file_path,dpi=200, bbox_inches='tight')
 
     huanshou = TLAPI.FullChangeHand()
-    huanshou_file_path = r"F:\temp\huannshou.png"
+    huanshou_file_path = r"./temp/huannshou.png"
     plt.xticks(rotation=45)
     plt.savefig(huanshou_file_path, dpi=200, bbox_inches='tight')
 
@@ -92,7 +92,7 @@ def getDataAndSavePic():
 
 
 # %%
-doc_file_path = r'F:\temp\TLDailyReport.docx'
+doc_file_path = r'./temp/TLDailyReport.docx'
 
 
 def gen_docfile(northmoney_flie_path, southmoney_flie_path, shibor_file_path, current_file_path, wenzhouindex_file_path,industryVolumeRank_file_path,industryVolumeWeekRank_file_path,
